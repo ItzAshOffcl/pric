@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =============== Font Awesome =============== -->
+    <script src="https://kit.fontawesome.com/3a18a52ce5.js" crossorigin="anonymous"></script>
+    
+    <!-- =============== Poppins Font =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- =============== Style Sheet =============== -->
+    <link rel="stylesheet" href="assets/css/search.css">
+
+
+
+    <title>Pric - Unsplash Clone</title>
+</head>
+<body>
+    <!-- Header Section -->
+
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo.png" alt="Pric logo" >
+            </a>
+            <form action="search.html" class="nav__form">
+                <div class="nav__search">
+                    <button class="nav__search-icon" type="submit" onclick="searchImages()"><i class="fa fa-light fa-magnifying-glass"></i></button>
+                    <input type="text" id="search-input" placeholder="Search images" name="search">
+                </div>
+            </form>
+            <div class="nav__menu" id="nav-menu">
+                <a href="#" class="nav__links">Explore</a>
+                <a href="#" class="nav__links">Advertise</a>
+                <a href="#" class="nav__links">Unsplash+</a>
+            <a href="#" class="nav__login nav__links">Login</a>
+                <button class="nav__sumbit-btn">Submit Photo</button>
+            </div>
+            <button class="nav__menu-icon" title="View more links"><i id="menu-icon" class="fa fa-light fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Search Heading -->
+
+        <section class="search-heading">
+            <h2 class="search__heading-text" id="search-heading-text">Ashwin</h2>
+        </section>
+
+
+    <!-- Image Popup window-->
+
+    <div class="image__popup hide" id="image-popup">
+        <button class="image__popup-close" id="image-close-btn"><i class="fa fa-light fa-xmark"></i></button>
+        <a href="#" id="image-download-btn"><button class="image__popup-download">Download</button></a>
+        <a href="#" id="image-download-icon"><button class="image__popup-download-icon"><i class="fa fa-light fa-arrow-down"></i></button></a>
+        <img src="" alt="image" class="image__popup-image">
+        <div class="image-controls" id="image-controls">
+            <button class="image__popup-controls pre-btn" id="pre-btn"><i class="fa fa-light fa-angle-left"></i></button>
+            <button class="image__popup-controls nxt-btn" id="nxt-btn"><i class="fa fa-light fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+
+    <section class="gallery" id="gallery">
+        <div class="gallery__container">
+            
+        </div>
+    </section>
+
+    <!-- =============== Javascript File =============== -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =============== Font Awesome =============== -->
+    <script src="https://kit.fontawesome.com/3a18a52ce5.js" crossorigin="anonymous"></script>
+    
+    <!-- =============== Poppins Font =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- =============== Style Sheet =============== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+
+    <title>Pric - Unsplash Clone</title>
+</head>
+<body>
+    <!-- Header Section -->
+
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#header" class="nav__logo" title="Pric">
+                <img src="assets/img/logo.png" alt="Pric logo" >
+            </a>
+            <form action="search.html" class="nav__form">
+                <div class="nav__search">
+                    <button class="nav__search-icon" type="submit" onclick="searchImages()"><i class="fa fa-light fa-magnifying-glass"></i></button>
+                    <input type="text" id="search-input" placeholder="Search images" name="search">
+                </div>
+            </form>
+            <div class="nav__menu" id="nav-menu">
+                <a href="#" class="nav__links">Explore</a>
+                <a href="#" class="nav__links">Advertise</a>
+                <a href="#" class="nav__links">Unsplash+</a>
+            <a href="#" class="nav__login nav__links">Login</a>
+                <button class="nav__sumbit-btn">Submit Photo</button>
+            </div>
+            <button class="nav__menu-icon" title="View more links" aria-expanded="false"><i id="menu-icon" class="fa fa-light fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    
+    <section class="home" id="home">
+        <div class="home__content">
+            <span class="home__text-primary">Pric</span>
+            <span class="home__text-secondary">A photo searching Platform<br>
+                Developed by Ash!</span>
+            <div class="home__social-icons">
+                <a href="https://github.com/ItzAshOffcl" target="_blank"><i class="fa fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/ItzAshOffcl" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ItzAshOffcl" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a>
+            </div>
+            </div>
+        <div class="home__image">
+            <div class="home__overlay"></div>
+            <img src="assets/img/home-img.jpg" alt="Home image">
+        </div>
+    </section>
+
+    <!-- Image Popup window-->
+
+    <div class="image__popup hide" id="image-popup">
+        <button class="image__popup-close" id="image-close-btn"><i class="fa fa-light fa-xmark"></i></button>
+        <a href="#" id="image-download-btn"><button class="image__popup-download">Download</button></a>
+        <a href="#" id="image-download-icon"><button class="image__popup-download-icon"><i class="fa fa-light fa-arrow-down"></i></button></a>
+        <img src="" alt="image" class="image__popup-image">
+        <div class="image-controls" id="image-controls">
+            <button class="image__popup-controls pre-btn" id="pre-btn"><i class="fa fa-light fa-angle-left"></i></button>
+            <button class="image__popup-controls nxt-btn" id="nxt-btn"><i class="fa fa-light fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+
+    <section class="gallery" id="gallery">
+        <div class="gallery__container">
+            
+        </div>
+    </section>
+
+    <!-- =============== Javascript File =============== -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
